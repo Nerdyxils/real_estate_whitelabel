@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: relative;
 }
 
 /* Logo */
@@ -68,6 +69,8 @@
   cursor: pointer;
   padding: 0.5rem;
   gap: 4px;
+  z-index: 1001;
+  position: relative;
 }
 
 .mobile-menu-btn span {
@@ -89,12 +92,15 @@
   box-shadow: var(--shadow);
   transform: translateY(-100%);
   opacity: 0;
+  visibility: hidden;
   transition: var(--transition);
+  z-index: 999;
 }
 
 .nav-mobile.active {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
 }
 
 .nav-mobile ul {
@@ -128,6 +134,7 @@
   
   .mobile-menu-btn {
     display: flex;
+    z-index: 1001;
   }
   
   .nav-mobile {
@@ -136,6 +143,7 @@
   
   .header .container {
     padding: 1rem;
+    position: relative;
   }
   
   .logo h2 {

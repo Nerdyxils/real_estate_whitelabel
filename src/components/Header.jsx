@@ -4,7 +4,10 @@ import './Header.css'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const toggleMenu = () => {
+  const toggleMenu = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    console.log('Mobile menu toggled:', !isMenuOpen)
     setIsMenuOpen(!isMenuOpen)
   }
 
@@ -27,7 +30,12 @@ const Header = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <button 
+          className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`} 
+          onClick={toggleMenu}
+          type="button"
+          aria-label="Toggle mobile menu"
+        >
           <span></span>
           <span></span>
           <span></span>
