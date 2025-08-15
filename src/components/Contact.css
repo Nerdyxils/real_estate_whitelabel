@@ -50,6 +50,9 @@
   color: var(--text-light);
   margin: 0;
   line-height: 1.6;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
 }
 
 .social-links h4 {
@@ -159,6 +162,7 @@
   
   .contact-details {
     gap: 1.25rem;
+    padding: 0 1rem;
   }
   
   .contact-icon {
@@ -167,10 +171,19 @@
   
   .contact-text h4 {
     font-size: 1rem;
+    line-height: 1.2;
   }
   
   .contact-text p {
     font-size: 0.95rem;
+    line-height: 1.5;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  
+  .contact-info > p {
+    text-align: center;
+    padding: 0 1rem;
   }
 }
 
@@ -196,6 +209,21 @@
   .social-icon {
     width: 35px;
     height: 35px;
+    font-size: 1rem;
+  }
+  
+  .contact-details {
+    padding: 0 0.5rem;
+  }
+  
+  .contact-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 0.25rem;
+  }
+  
+  .contact-info > p {
+    padding: 0 0.5rem;
     font-size: 1rem;
   }
 }

@@ -23,6 +23,7 @@
 
 .about-features {
   margin: 2rem 0;
+  width: 100%;
 }
 
 .feature {
@@ -30,6 +31,7 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 100%;
 }
 
 .feature-icon {
@@ -41,6 +43,7 @@
   color: var(--text-dark);
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+  line-height: 1.2;
 }
 
 .feature-text p {
@@ -48,24 +51,31 @@
   font-size: 0.95rem;
   margin: 0;
   line-height: 1.6;
+  text-align: left;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
 }
 
 .about-image {
   text-align: center;
 }
 
-.headshot-placeholder {
+.agent-photo {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
+  overflow: hidden;
   margin: 0 auto 2rem;
   box-shadow: var(--shadow);
+  border: 4px solid white;
+}
+
+.agent-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .credentials {
@@ -118,6 +128,12 @@
   
   .feature {
     justify-content: center;
+    text-align: center;
+  }
+  
+  .feature-text p {
+    text-align: center;
+    max-width: 100%;
   }
 }
 
@@ -126,7 +142,7 @@
     gap: 2rem;
   }
   
-  .headshot-placeholder {
+  .agent-photo {
     width: 250px;
     height: 250px;
   }
@@ -139,13 +155,37 @@
   .about-description p {
     font-size: 1rem;
   }
+  
+  .about-features {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  
+  .feature-text {
+    width: 100%;
+  }
+  
+  .feature-text p {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
 }
 
 @media (max-width: 480px) {
-  .headshot-placeholder {
+  .agent-photo {
     width: 200px;
     height: 200px;
-    font-size: 1rem;
   }
   
   .feature-icon {
@@ -154,10 +194,23 @@
   
   .feature-text h4 {
     font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
   
   .feature-text p {
     font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 0.25rem;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .about-features {
+    padding: 0 0.5rem;
+  }
+  
+  .feature {
+    margin-bottom: 2rem;
   }
 }
 

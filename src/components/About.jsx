@@ -62,9 +62,13 @@ const About = () => {
           
           <ScrollAnimation animation="fade-left">
             <div className="about-image">
-              {/* Agent headshot placeholder - replace with actual image */}
-              <div className="headshot-placeholder">
-                <div className="placeholder-text">Agent Photo</div>
+              {/* Agent headshot - using real estate professional image */}
+              <div className="agent-photo">
+                <img 
+                  src="/real_estate.png" 
+                  alt="Sarah Johnson - Real Estate Agent"
+                  className="agent-img"
+                />
               </div>
               
               <div className="credentials">
