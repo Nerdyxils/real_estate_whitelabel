@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-background">
         {/* Luxury home background image */}
-        <div className="hero-image" style={{ backgroundImage: 'url(images/luxury1.webp)' }}>
+        <div className="hero-image" style={{ backgroundImage: 'url(/luxury1.webp)' }}>
           <div className="hero-overlay"></div>
         </div>
       </div>

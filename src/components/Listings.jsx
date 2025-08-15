@@ -13,7 +13,7 @@ const Listings = () => {
       beds: "4",
       baths: "3",
       sqft: "3,200",
-      image: "images/luxury1.webp", // Luxury property image
+      image: "/luxury1.webp", // Luxury property image
       description: "Stunning contemporary villa with panoramic city views, gourmet kitchen, and resort-style pool."
     },
     {
@@ -24,7 +24,7 @@ const Listings = () => {
       beds: "3",
       baths: "2",
       sqft: "2,400",
-      image: "images/luxury2.jpg", // Luxury property image
+      image: "/luxury2.jpg", // Luxury property image
       description: "Sophisticated penthouse featuring floor-to-ceiling windows, private terrace, and premium finishes."
     },
     {
@@ -35,7 +35,7 @@ const Listings = () => {
       beds: "5",
       baths: "3",
       sqft: "3,800",
-      image: "images/luxury3.png", // Luxury property image
+      image: "/luxury3.png", // Luxury property image
       description: "Spacious family home with updated kitchen, large backyard, and sparkling pool perfect for entertaining."
     },
     {
@@ -46,7 +46,7 @@ const Listings = () => {
       beds: "2",
       baths: "2",
       sqft: "1,600",
-      image: "images/luxury1.webp", // Luxury property image (reusing for variety)
+      image: "/luxury1.webp", // Luxury property image (reusing for variety)
       description: "Prime location investment property with high rental potential and excellent appreciation."
     }
   ]
