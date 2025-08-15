@@ -1,0 +1,49 @@
+/* Scroll Animation Styles */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animation.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation variants */
+.scroll-animation.fade-up {
+  transform: translateY(30px);
+}
+
+.scroll-animation.fade-right {
+  transform: translateX(-30px);
+}
+
+.scroll-animation.fade-left {
+  transform: translateX(30px);
+}
+
+.scroll-animation.fade-up.animate-in {
+  transform: translateY(0);
+}
+
+.scroll-animation.fade-right.animate-in {
+  transform: translateX(0);
+}
+
+.scroll-animation.fade-left.animate-in {
+  transform: translateX(0);
+}
+
+/* Staggered animations */
+.scroll-animation:nth-child(1) { transition-delay: 0.1s; }
+.scroll-animation:nth-child(2) { transition-delay: 0.2s; }
+.scroll-animation:nth-child(3) { transition-delay: 0.3s; }
+.scroll-animation:nth-child(4) { transition-delay: 0.4s; }
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animation {
+    transition: none;
+  }
+}
