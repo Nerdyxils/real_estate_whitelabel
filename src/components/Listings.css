@@ -55,7 +55,7 @@
 
 .property-title {
   font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   color: var(--text-dark);
 }
 
@@ -93,6 +93,7 @@
 
 .listings-cta {
   text-align: center;
+  margin-top: 2rem;
 }
 
 /* Responsive Design */
@@ -108,6 +109,10 @@
   
   .property-content {
     padding: 1.25rem;
+  }
+  
+  .property-title {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -131,6 +136,10 @@
   
   .detail {
     font-size: 0.85rem;
+  }
+  
+  .listings-cta {
+    margin-top: 1.5rem;
   }
 }
 

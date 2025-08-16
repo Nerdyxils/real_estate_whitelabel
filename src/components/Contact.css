@@ -168,7 +168,6 @@
   
   .contact-details {
     gap: 1.25rem;
-    padding: 0;
   }
   
   .contact-item {
@@ -193,8 +192,7 @@
   }
   
   .contact-info > p {
-    text-align: left;
-    padding: 0;
+    text-align: center;
   }
 }
 
@@ -216,6 +214,7 @@
   .contact-icon {
     font-size: 1.1rem;
     width: 18px;
+    margin-top: 0;
   }
   
   .social-icon {
@@ -224,22 +223,21 @@
     font-size: 1rem;
   }
   
-  .contact-details {
-    padding: 0;
-  }
-  
   .contact-item {
     gap: 0.5rem;
+  }
+
+  .contact-text h4 {
+    text-align: left !important;
   }
   
   .contact-text p {
     font-size: 0.9rem;
     line-height: 1.4;
-    padding: 0;
+    text-align: left !important;
   }
   
   .contact-info > p {
-    padding: 0;
     font-size: 1rem;
   }
 }

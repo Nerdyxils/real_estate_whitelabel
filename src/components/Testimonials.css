@@ -95,6 +95,7 @@
   background: var(--background-gray);
   padding: 2rem;
   border-radius: var(--border-radius);
+  margin-top: 2rem;
 }
 
 .testimonials-cta p {
@@ -135,6 +136,10 @@
   .testimonial-text {
     font-size: 0.95rem;
   }
+  
+  .testimonials-cta {
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -170,6 +175,7 @@
   
   .testimonials-cta {
     padding: 1.5rem;
+    margin-top: 1rem;
   }
   
   .testimonials-cta p {
